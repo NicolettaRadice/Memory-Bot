@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- <link rel="icon" 
+      type="image/png" 
+      href="./html/favicon.ico"> -->
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="./html/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./html/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./html/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./html/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./html/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>Archive</title>
+
+</head>
+
+<body>
+	<div class="white">
+		<h1 class="title">
+			<p>Memory Archive</p>
+		</h1>
+
+		<!-- <div class="box"> -->
+			
+		
+		<div class="memoriesArchive">
+			 <% memory.forEach(function(memory){ %>
+							<p><span class="span3">Memory: </span> <%= memory.text %> <p>
+							<p><span class="span3">City: </span> <%= memory.city %> </p>
+							<p><span class="span3">Date: </span> <%= memory.date %> </p>
+				
+							<br>
+							<hr>
+							<br>
+			<% }); %>
+		</div>
+
+		<!-- </div>	 -->
+	
+		
+		<div class=".robotMessage" id="demo"></div>
+
+				<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top divTitle navbar-expand-md">
+  <a class="navbar-brand" id="title" href="/">MemoryBot</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
+    <ul class="navbar-nav mr-auto" id="navigation">
+      <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+	 <li class="nav-item">
+        <a class="nav-link" href="/">Homepage</a>
+      </li>
+    </ul>
+	
+
+    
+  </div>
+</nav>
+	</div>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/libraries/StartAudioContext.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
+<!-- <script type="text/javascript" src="../js/libraries/p5.speech.js"></script>  -->
+<script type="text/javascript" src="../js/libraries/rita-full.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+
+</html>

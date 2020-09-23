@@ -1,0 +1,22 @@
+{
+  "name": "memorybot",
+  "version": "1.0.0",
+  "description": "Graduation project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node app.js"
+	
+  },
+  "author": "Nicoletta Radice",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.13"
+  },
+  "devDependencies": {},
+  "keywords": []
+}

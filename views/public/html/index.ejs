@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="./html/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./html/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./html/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./html/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./html/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+    <title>MemoryBot</title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
+<script type="text/javascript" src="../js/libraries/p5.speech.js"></script> 
+
+</head>
+
+
+<body>
+	
+	<!-- <video autoplay muted loop id="myVideo">
+  <source src="../assets/1080.mp4" type="video/mp4">
+</video> -->
+	
+<div class="phone">
+<p>	Dear User, <br> <br> 
+	Unfortunately this website is only for desktop. Make sure to visit this page from a computer on a Chrome Browser. If you're seeing this message on a computer make sure to make this window bigger.
+	<br> <br> <br> <br>  With Love, <br>  Memorybot
+	
+</p>
+	</div>
+<button id="start">
+	
+	<p id='small' class="span4">
+	 Press here to talk with the bot.
+	</p> 
+
+	</button>
+	
+	
+<div class="tickerwrapper" id="none">
+   <ul class='list'>
+      <li class='listitem'>
+        <p>I still clearly remember that one summer day on my terrace skating in my brand new roller skates. The sun was up. I was happy •</p>
+      </li>
+      <li class='listitem'>
+        <p>When I was little I would climb upon the small fence in front of our house and tried if I could see our kindergarten. Which of course I could not see because too far away •</p>
+      </li>
+      <li class='listitem'>
+        <p>I remember the time your fake vespa broke in the middle of the road and we had to wait for the tow truck under the burning sun of mid august •</p>
+      </li>
+      <li class='listitem'>
+        <p>I remember the very first time I was somewhere far away from my family •</p>
+      </li>
+      <li class='listitem'>
+        <p>It was an evening in May •</p>
+      </li>
+      <li class='listitem'>
+        <p>One of my pet turtles escaped from the pond in my yard, when I went out behind the house in search of my turtle I found two other turtles that I kept as pets for ten years •</p>
+      </li>
+      <li class='listitem'>
+        <p>Dancing in the morning, in my house, alone, this has become my new reality. I used to have dancing classes every two days but they’re suspended now •</p>
+      </li>
+      <li class='listitem'>
+        <p>A pizzeria down the road where I live is always linked to good memories •</p>
+      </li>
+      <li class='listitem'>
+        <p>Yesterday I had a prosecco with some friends under the rain •</p>
+      </li>
+      <li class='listitem'>
+        <p>Screaming of happiness after winning the football match •</p>
+      </li>
+     <li class='listitem'>
+        <p>A memory of my grandpa •</p>
+      </li>
+      <li class='listitem'>
+        <p>Music always had a way to put me in a good mood and I started walking more lightly while my dog nearly choked herself on the leash, furiously running towards a patch of grass. Impatience runs in the family, apparently •</p>
+      </li>
+      <li class='listitem'>
+        <p>On strawberry hunt with my grandma in her big garden when I was very little. Best joy. Best grandma. •</p>
+      </li>
+      <li class='listitem'>
+        <p>The warm summer night we were eating the best pizza in a beautiful park •</p>
+      </li>
+      <li class='listitem'>
+        <p>I love drinking tea, especially in rainy days. When I was younger I didn't appreciate so much, I feel now it is actually regenerating for me! •</p>
+      </li>
+  </ul>
+</div>
+	
+	
+	<div class="tickerwrapper due" id="none">
+   <ul class='list'>
+      <li class='listitem'>
+        <p>I remember, when I was fourteen-fifteen years old, being on a beach in Patagonia, my mother told me that if I paid attention, I could perceive a stillness in the environment when the tide changes its course •</p>
+      </li>
+      <li class='listitem'>
+        <p>My 6th birthday party was a picnic in the park and a ride on a little train which was green and tiny •</p>
+      </li>
+      <li class='listitem'>
+        <p>Smell of summer •</p>
+      </li>
+      <li class='listitem'>
+        <p>When you are sitting on your couch all alone and thinking back to the times that there was no social distancing, a lot of memories passes trough your mind. The first memory that also made me happy thinking about was the last holiday with the family in January at Lanzarote. Standing on a volcano feeling all free, walking around the island seeing the happiness in everybody's eyes, eating at night in a restaurant with great music. When I think about that Holiday, the smile turns back on my face! •</p>
+      </li>
+      <li class='listitem'>
+        <p>The day I lost a friend because his girlfriend was jealous •</p>
+      </li>
+      <li class='listitem'>
+        <p>IIww   •</p>
+      </li>
+      <li class='listitem'>
+        <p>I used to play with Lego •</p>
+      </li>
+      <li class='listitem'>
+        <p>We use to video call each other on Skype •</p>
+      </li>
+      <li class='listitem'>
+        <p>I had surgery when I was seventeen •</p>
+      </li>
+      <li class='listitem'>
+        <p>The first time I saw him I thought he's the one •</p>
+      </li>
+     <li class='listitem'>
+        <p>When we were on holiday in Southern Italy an we saw this lovely old house which we bought the same day! •</p>
+      </li>
+      <li class='listitem'>
+        <p>I bought a green chair in Groningen with my friends •</p>
+      </li>
+      <li class='listitem'>
+        <p>I bought a green coat when I was in high school •</p>
+      </li>
+      <li class='listitem'>
+        <p>When I was around the age of seven I went on a holiday to the province of Zeeland with my mom. For two weeks we borrowed the caravan of my grandparents and spend the holiday on a camping right next to the beach •</p>
+      </li>
+      <li class='listitem'>
+        <p>I remember swimming in the river Piave somewhere near Falze Di Piave, region Treviso •</p>
+      </li>
+  </ul>
+</div>
+	
+
+	
+	
+		
+	
+<!-- <iframe src="./assets/sounds/Breathing.wav" allow="autoplay" id="audio" style="display: none"></iframe> -->
+	
+	
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top divTitle navbar-expand-md">
+  <a class="navbar-brand" id="title" href="/">MemoryBot</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+    <ul class="navbar-nav mr-auto" id="navigation">
+      <li class="nav-item">
+        <a class="nav-link" href="/archive">Archive</a>
+      </li>
+	 <li class="nav-item">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+    </ul>
+
+	  
+
+
+    
+  </div>
+</nav>
+	
+	
+	
+
+	
+
+		<div class="box">	
+			<div class="robotMessage" id="demo"></div>
+		</div>
+	
+	<div class="container">
+				  <div class="circle" id="circle"></div>
+	</div>
+
+	
+	<div class="end">
+		
+		
+	</div>
+
+	<p id ="p"></p>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script type="text/javascript" src="../js/libraries/StartAudioContext.js"></script> 
+<script type="text/javascript" src="../js/libraries/rita-full.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+</html>
