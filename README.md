@@ -1,2 +1,2 @@
 # Memory Bot
- Graduation Projecr
+ Graduation Project
